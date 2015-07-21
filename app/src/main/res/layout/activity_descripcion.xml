@@ -1,0 +1,532 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.che.cliente.Descripcion">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_contenedor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:background="@color/backColor">
+
+            <!--Informacion General-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_info_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_titulo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_titulo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/informacionGeneral"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id = "@+id/vw_divider"
+                            android:layout_alignLeft="@+id/tv_titulo1"
+                            android:layout_below="@+id/tv_titulo1"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1.8dp"
+                            android:background="@color/barColor"
+                            />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_titulo1">
+
+                        <!--Nombre de la beca-->
+                        <RelativeLayout
+                            android:id="@+id/rl_nombre_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_label_nombre_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/nombreBeca"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_nombre_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_nombre_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                        <!--Pais de la Beca-->
+                        <RelativeLayout
+                            android:id="@+id/rl_paisbeca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_nombre_beca"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_label_pais_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/paisBeca"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_pais_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_pais_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <!--Entidad que patrocina la Beca -->
+                        <RelativeLayout
+                            android:id="@+id/rl_entidadbeca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_paisbeca"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_label_entidad_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/entidadBeca"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_entidad_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_entidad_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <!--Tipo de Beca -->
+                        <RelativeLayout
+                            android:id="@+id/rl_tipobeca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rl_entidadbeca"
+                            android:layout_marginTop="6dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_label_tipo_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tipoBeca"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_tipo_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_tipo_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <!--Informacion de Descripcion -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_info_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_info_general"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_titulo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_titulo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Descripcion"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20sp" />
+                        <View
+                            android:id = "@+id/vw_divider2"
+                            android:layout_alignLeft="@+id/tv_titulo2"
+                            android:layout_below="@+id/tv_titulo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1.8dp"
+                            android:background="@color/barColor"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_titulo2">
+
+                        <!--Descripcion de Beca-->
+                        <RelativeLayout
+                            android:id="@+id/rl_descripcion_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_descripcion_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <!--Informacion de Requisitos-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_info_requisitos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_info_descripcion"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_titulo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_titulo3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Requisitos"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id = "@+id/vw_divider3"
+                            android:layout_alignLeft="@+id/tv_titulo3"
+                            android:layout_below="@+id/tv_titulo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1.8dp"
+                            android:background="@color/barColor"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_titulo3">
+
+                        <!--Descripcion de Beca-->
+                        <RelativeLayout
+                            android:id="@+id/rl_requisitos_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_requisitos_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+            <!--Informacion de Solicitud-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_info_solicitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv_info_requisitos"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false">
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_titulo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_titulo4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/solicitud"
+                            android:textColor="@color/primaryColor"
+                            android:textSize="20sp" />
+
+                        <View
+                            android:id = "@+id/vw_divider4"
+                            android:layout_alignLeft="@+id/tv_titulo4"
+                            android:layout_below="@+id/tv_titulo4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1.8dp"
+                            android:background="@color/barColor"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_titulo4">
+
+                        <!--Descripcion de Solicitud-->
+                        <RelativeLayout
+                            android:id="@+id/rl_solicitud_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_solicitud_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_subtitulo1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_solicitud_beca"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/solicituddel"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <!--Fecha inicio-->
+                        <RelativeLayout
+                            android:id="@+id/rl_fecha_inicio_beca"
+                            android:layout_below="@+id/rl_solicitud_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_label_fecha_inicio_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fechaInicio"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_fecha_inicio_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_fecha_inicio_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <!--Fecha fin-->
+                        <RelativeLayout
+                            android:id="@+id/rl_fecha_fin_beca"
+                            android:layout_below="@+id/rl_fecha_inicio_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_label_fecha_fin_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fechaFin"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_fecha_fin_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_fecha_fin_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+
+                        <!--Direccion-->
+                        <RelativeLayout
+                            android:id="@+id/rl_direccion_beca"
+                            android:layout_below="@+id/rl_fecha_fin_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_label_direccion_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/direccion"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_direccion_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_direccion_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+
+                        <!--Telefono-->
+                        <RelativeLayout
+                            android:id="@+id/rl_telefono_beca"
+                            android:layout_below="@+id/rl_direccion_beca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp">
+
+                            <TextView
+                                android:id="@+id/tv_label_telefono_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/telefono"
+                                android:textColor="@color/titleColor"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/tv_telefono_beca"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_label_telefono_beca"
+                                android:text="@string/titulo"
+                                android:textColor="@color/primaryText2"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

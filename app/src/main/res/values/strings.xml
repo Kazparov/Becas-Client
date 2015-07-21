@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BecasGt</string>
+
+    <string name="hello_world">Hello world con cambio 3!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_compartir">Compartir</string>
+    <string name="title_activity_descripcion">Descripcion</string>
+    <string name="option_buscar">Buscar</string>
+    <string name="search_hint">Ingresa el tag que desees!</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="titulo">Sin definir</string>
+    <string name="paisBeca">Pais de beca:</string>
+    <string name="entidadBeca">Entidad que otorga beca:</string>
+    <string name="informacionGeneral">Informacion General</string>
+    <string name="nombreBeca">Nombre de beca:</string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="Requisitos">Requisitos</string>
+    <string name="tipoBeca">Tipo de beca:</string>
+    <string name="solicitud">Solicitud</string>
+    <string name="fechaInicio">Del:</string>
+    <string name="fechaFin">Al:</string>
+    <string name="solicituddel">Recepcion de Solicitud:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="title_activity_search">Busqueda</string>
+</resources>

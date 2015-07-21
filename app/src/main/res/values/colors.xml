@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name = "primaryColor">#2979FF</color>
+    <color name = "primaryColorDark">#2962FF</color>
+    <color name = "colorTabs">#448AFF</color>
+    <color name = "accentColor">#FFFFFF</color>
+    <color name = "subGroups">#82B1FF</color>#BBDEFB
+    <!--
+    <color name = "primaryColor">#212121</color>
+    <color name = "primaryColorDark">#000000</color>
+    <color name = "colorTabs">#303030</color>
+
+    -->
+
+
+
+    <color name = "primaryText">#ff010212</color>
+    <color name = "secondaryText">#424242</color>
+    <color name = "thirdText">#616161</color>
+    <color name = "backColor">#E3F2FD</color>
+
+
+
+    <color name = "backgroundDes">#E3F2FD</color>
+    <color name = "primaryText2">#ff010212</color>
+    <color name = "titleColor">#ffc8110b</color>
+    <color name = "backgroundTitles">#A4A4A4</color>
+    <color name = "barColor">#ff010212</color>
+
+</resources>
